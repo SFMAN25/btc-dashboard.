@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTC/USDT Dashboard</title>
+    <title>لوحة البيتكوين المتقدمة BTC/USDT</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>لوحة متابعة البيتكوين BTC/USDT</h1>
+        <h1>لوحة متابعة البيتكوين BTC/USDT - متقدمة</h1>
         <div class="price">
             <span>السعر الحالي: </span>
             <span id="btc-price">جاري التحميل...</span>
         </div>
         <canvas id="btcChart" width="800" height="400"></canvas>
         <div class="alerts">
-            <h2>تنبيهات السعر</h2>
+            <h2>تنبيهات السعر والإشارات</h2>
             <label>تنبيه عند الوصول إلى: </label>
             <input type="number" id="alert-price" placeholder="مثلاً 30000">
             <button onclick="setAlert()">تفعيل التنبيه</button>
+            <div id="signal"></div>
         </div>
     </div>
     <script src="script.js"></script>
